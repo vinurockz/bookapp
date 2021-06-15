@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends "home.html"%}
+{%block body_block%}
+
+<form action="" method="post">
+    <h3>Create Book Details</h3>
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="Create">
+</form>
+
+{%endblock%}
